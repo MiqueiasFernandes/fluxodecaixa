@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mfernandes.fluxodecaixa.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo"
+        android:textSize="20dp"
+        android:layout_marginRight="400px"
+        app:layout_constraintBottom_toBottomOf="@+id/label_entrada"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/saldo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/label_saldo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ -1.000,00"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:textColor="#000000"
+        style="@style/AudioFileInfoOverlayText"
+        app:layout_constraintBottom_toBottomOf="@+id/entrada"
+        app:layout_constraintLeft_toLeftOf="@+id/label_saldo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/saldo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entradas"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/entrada"
+        app:layout_constraintTop_toTopOf="@+id/label_saldo"
+        android:id="@+id/label_entrada"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 1,00"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:textColor="#0000ff"
+        app:layout_constraintBottom_toBottomOf="@+id/saidaDiaria"
+        app:layout_constraintLeft_toLeftOf="@+id/label_entrada"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/saldo"
+        android:id="@+id/entrada"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 2,00"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#0000ff"
+        app:layout_constraintBottom_toBottomOf="@+id/saida"
+        app:layout_constraintLeft_toLeftOf="@+id/label_entrada"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/entrada"
+        android:id="@+id/entradaDiaria"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saidas"
+        android:textSize="20dp"
+        android:layout_marginRight="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/entrada"
+        app:layout_constraintTop_toTopOf="@id/label_entrada"
+        android:id="@+id/label_saida"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 3,00"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff0000"
+        app:layout_constraintBottom_toBottomOf="@+id/saidaDiaria"
+        app:layout_constraintLeft_toLeftOf="@+id/label_saida"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/entradaDiaria"
+        android:id="@+id/saida"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 4,00"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/label_saida"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/saida"
+        android:id="@+id/saidaDiaria"/>
+
+</android.support.constraint.ConstraintLayout>
